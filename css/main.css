@@ -686,7 +686,17 @@ i.ml-auto {
 	color: #FFE400;
 	font-size: 45px;
 }
-
+.componets{
+  position:relative;
+  top:50px;
+  text-align: center;
+}
+.componets p{
+  font-size: 40px;
+}
+.componets button{
+  width:120px;
+}
 
 
 
@@ -783,7 +793,17 @@ i.ml-auto {
 .box{
 	margin-bottom: 15px;
 }
-
+.componets{
+  position:relative;
+  top:-270px;
+  text-align: center;
+}
+.componets p{
+  font-size: 25px;
+}
+.componets button{
+  width:80px;
+}
 
 
 }

@@ -27,27 +27,26 @@
 		    </ul>
 		</div>
 	  </nav>
-	  
+
 </header>
 
 
 <div class="container search-container">
-    <form action="/action_page.php" class="center-align search-container-form">
-      <input type="text" placeholder="Search.." name="search" class="browser-default search-container-form-text" autocomplete="off" >
-      <button type="submit" class="search-container-form-button"><i class="medium material-icons">search</i></button>
+    <form class="center-align search-container-form">
+			<input type="text" id="myInput" class="browser-default search-container-form-text" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+      <!-- <input type="text" placeholder="Search.." name="search" class="browser-default search-container-form-text" autocomplete="off" > -->
     </form>
 </div>
 
 
 <div class="container lists-container">
   <div class="card">
-    <ul class="list">
+    <ul class="list" id="myUL">
       <li class="waves-effect">
         <div class="valign-wrapper">
           <i class="material-icons left green-text">adjust</i>
           <div class="title">
-            Rabsberry Pi<br>
-            <span>Available</span>
+            Rabsberry Pi
           </div>
           <i class="material-icons ml-auto black-text">add_circle_outline</i>
         </div>
@@ -56,90 +55,603 @@
         <div class="valign-wrapper">
           <i class="material-icons left red-text">adjust</i>
           <div class="title">
-            Servo motor<br>
-            <span>Not Available</span>
+            Servo motor
           </div>
           <i class="material-icons ml-auto">add_circle_outline</i>
         </div>
       </li>
-      <li class="waves-effect">
+			<li class="waves-effect">
         <div class="valign-wrapper">
           <i class="material-icons left green-text">adjust</i>
           <div class="title">
-            Arduino Uno<br>
-            <span>Available</span>
-          </div>
-          <i class="material-icons ml-auto black-text">add_circle_outline</i>
-        </div>
-      </li>
-      <li class="waves-effect">
-        <div class="valign-wrapper">
-          <i class="material-icons left green-text">adjust</i>
-          <div class="title">
-            ESP 8266<br>
-            <span>Available</span>
-          </div>
-          <i class="material-icons ml-auto black-text">add_circle_outline</i>
-        </div>
-      </li>
-      <li class="waves-effect">
-        <div class="valign-wrapper">
-          <i class="material-icons left green-text">adjust</i>
-          <div class="title">
-            Relay Modules<br>
-            <span>Available</span>
-          </div>
-          <i class="material-icons ml-auto black-text">add_circle_outline</i>
-        </div>
-      </li>
-      <li class="waves-effect">
-        <div class="valign-wrapper">
-          <i class="material-icons left green-text">adjust</i>
-          <div class="title">
-            LDR<br>
-            <span>Available</span>
-          </div>
-          <i class="material-icons ml-auto black-text">add_circle_outline</i>
-        </div>
-      </li>
-      <li class="waves-effect">
-        <div class="valign-wrapper">
-          <i class="material-icons left green-text">adjust</i>
-          <div class="title">
-            Bluetooth Modules<br>
-            <span>Available</span>
-          </div>
-          <i class="material-icons ml-auto black-text">add_circle_outline</i>
-        </div>
-      </li>
-      <li class="waves-effect">
-        <div class="valign-wrapper">
-          <i class="material-icons left green-text">adjust</i>
-          <div class="title">
-            IR Receiver<br>
-            <span>Available</span>
-          </div>
-          <i class="material-icons ml-auto black-text">add_circle_outline</i>
-        </div>
-      </li>
-      <li class="waves-effect">
-        <div class="valign-wrapper">
-          <i class="material-icons left red-text">adjust</i>
-          <div class="title">
-            Speed Sensor<br>
-            <span>Not Available</span>
+            LEDs
           </div>
           <i class="material-icons ml-auto">add_circle_outline</i>
         </div>
       </li>
-      <li class="waves-effect">
+			<li class="waves-effect">
         <div class="valign-wrapper">
           <i class="material-icons left green-text">adjust</i>
           <div class="title">
-            Pi Cam<br>
-            <span>Available</span>
+            Heat Sensor
           </div>
-          <i class="material-icons ml-auto black-text">add_circle_outline</i>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            DPDT Toggle Switch
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Positive Voltage Regulator
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            IR LEDs
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Diode
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            FlexiForce force sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            LDR
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Buzzer
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Potentiometer
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Metalized film capacitor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+          	7 Segment Display
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Push buttons
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Aligator clips
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Resistors
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Capacitors
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Diodes
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Relay
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Torch
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Arduino Uno
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Arduino Mega
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Arduino Leonardo
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Arduino Pro Mini
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            USB connector module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Lan shield
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+          	KK Multicopter controller
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            WiFi module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Rasberry Pi Zero
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Mem card
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Zigbee Shield
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            LCD screen shield
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            LCD module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Pi cam
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Piezo sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Current sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            RF module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Joystick module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            GPS module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Acceleratometer module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Gyroscope
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Speed sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Relay modules
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Ultrasonic sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            IR reciever
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Moisture sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Touch keypad
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Keypad
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Raindrop sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Humidity sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            PIR sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            PWM driver(16 channel)
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Heat gradient module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Vibration sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Dust sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Gas sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Card adaptor module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Barometric pressure sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Flex sensor
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Keyes flame detector
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            GSM module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            BT module
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            Arduino cabels
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            LED strip
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            LED matrix
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            RFID tag
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
+        </div>
+      </li>
+			<li class="waves-effect">
+        <div class="valign-wrapper">
+          <i class="material-icons left green-text">adjust</i>
+          <div class="title">
+            MIC
+          </div>
+          <i class="material-icons ml-auto">add_circle_outline</i>
         </div>
       </li>
     </ul>
@@ -157,7 +669,7 @@
             Rasberry Pi<br>
           </div>
           <div style="position: absolute; right: 10px;">
-          <i class="material-icons ml-auto red-text">remove_circle_outline</i>
+          <i class="material-icons ml-auto green-text">remove_circle_outline</i>
           <span style= "font-size: 25px; position: relative; top: -3px;">5</span>
           <i class="material-icons ml-auto black-text">add_circle_outline</i>
         </div>
@@ -169,7 +681,7 @@
             Servo motor<br>
           </div>
           <div style="position: absolute; right: 10px;">
-          <i class="material-icons ml-auto red-text">remove_circle_outline</i>
+          <i class="material-icons ml-auto green-text">remove_circle_outline</i>
           <span style= "font-size: 25px; position: relative; top: -3px;">5</span>
           <i class="material-icons ml-auto black-text">add_circle_outline</i>
         </div>
@@ -270,6 +782,22 @@
     $('.carousel').carousel();
  });
   baguetteBox.run('.tz-gallery');
+	function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("div")[1];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
 </script>
 
 </body>

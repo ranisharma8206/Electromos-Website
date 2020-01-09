@@ -19,6 +19,8 @@ body{
 }
 
 
+
+
 .list-nav li a{
 	font-weight: bold;
 	font-size: 13px;
@@ -686,17 +688,26 @@ i.ml-auto {
 	color: #FFE400;
 	font-size: 45px;
 }
-.componets{
+.componets, .tutorials{
   position:relative;
   top:50px;
   text-align: center;
 }
-.componets p{
+.componets p, .tutorials p{
   font-size: 40px;
 }
 .componets button{
   width:120px;
 }
+.tutorial-item{
+  color: black;
+  float: left;
+  position: relative;
+  top:5px;
+  font-size: 18px;
+}
+
+
 
 
 
@@ -793,12 +804,12 @@ i.ml-auto {
 .box{
 	margin-bottom: 15px;
 }
-.componets{
+.componets, .tutorials{
   position:relative;
   top:-270px;
   text-align: center;
 }
-.componets p{
+.componets p, .tutorials p{
   font-size: 25px;
 }
 .componets button{

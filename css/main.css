@@ -483,6 +483,7 @@ input:focus {
   width:350px;
   height:400px;
 }
+
 .modal1{
   height:330px;
   background: var(--secondary-color);
@@ -507,6 +508,96 @@ input:focus {
   font-size:20px;
   color:black;
   margin-top:20px;
+}
+
+/* Hack-a-Tronize model */
+#hack-modal{
+  width:600px;
+  height:450px;
+}
+#hack-modal-small{
+  width:350px;
+  height:470px;
+}
+#hack-modal .modal3{
+  height:380px;
+  background: var(--secondary-color);
+}
+.model3-small{
+  height:400px;
+  background: var(--secondary-color);
+}
+
+/* Rpi modal */
+#rpi-modal{
+  width:600px;
+  height:400px;
+}
+#rpi-modal-small{
+  width:350px;
+  height:400px;
+}
+#rpi-modal .modal3{
+  height:330px;
+  background: var(--secondary-color);
+}
+.model4-small{
+  height:330px;
+  background: var(--secondary-color);
+}
+
+/* Arduino Modal */
+#arduino-modal{
+  width:600px;
+  height:400px;
+}
+#arduino-modal-small{
+  width:350px;
+  height:400px;
+}
+#arduino-modal .modal3{
+  height:330px;
+  background: var(--secondary-color);
+}
+.model5-small{
+  height:330px;
+  background: var(--secondary-color);
+}
+
+/* Arena Modal */
+#arena-modal{
+  width:600px;
+  height:450px;
+}
+#arena-modal-small{
+  width:350px;
+  height:470px;
+}
+#arena-modal .modal3{
+  height:380px;
+  background: var(--secondary-color);
+}
+.modal6-small{
+  height:400px;
+  background: var(--secondary-color);
+}
+
+/* Tech riddle modal */
+#riddle-modal{
+  width:600px;
+  height:450px;
+}
+#riddle-modal-small{
+  width:350px;
+  height:470px;
+}
+#riddle-modal .modal3{
+  height:380px;
+  background: var(--secondary-color);
+}
+.modal7-small{
+  height:400px;
+  background: var(--secondary-color);
 }
 
 #timeline ul li.show:after { background: var(--secondary-color); }

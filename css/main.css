@@ -8,6 +8,7 @@ font-family: sans-serif;
 }
 
 body{
+
   	background: url(../img/img1.jpeg);
 	background-size: cover;
 	background-position: center;
@@ -476,15 +477,29 @@ input:focus {
   width:600px;
   height:400px;
 }
+#techmaitry-modal-small{
+  width:350px;
+  height:400px;
+}
 .modal1{
+  height:330px;
+  background: var(--secondary-color);
+}
+.modal1-small{
   height:330px;
   background: var(--secondary-color);
 }
 .modal h1{
   color: #FFE400;
 }
+.modal1-small h1{
+  color: #FFE400;
+}
 .modal p{
   font-size:20px;
+}
+.modal1-small p{
+  font-size:15px;
 }
 .modal-footer p{
   font-size:20px;
@@ -768,6 +783,7 @@ i.ml-auto {
 .box{
 	margin-bottom: 15px;
 }
+
 
 
 }

@@ -797,7 +797,11 @@ i.ml-auto {
   top:5px;
   font-size: 18px;
 }
-
+.event_bottom{
+  position: relative;
+  top:40vh;
+  height:50px;
+}
 
 
 
@@ -905,6 +909,11 @@ i.ml-auto {
 }
 .componets button{
   width:80px;
+}
+.event_bottom{
+  position: relative;
+  top:20vh;
+  height:50px;
 }
 
 
